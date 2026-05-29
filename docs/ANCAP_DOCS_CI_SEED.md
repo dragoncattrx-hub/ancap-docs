@@ -36,7 +36,7 @@ At minimum, validate:
 - public trust/bootstrap docs still exist (`docs/STATUS_MATRIX.md`, `docs/OPEN_SOURCE_GITHUB_TRANSPARENCY.md`, `docs/ANCAP_DOCS_SPLIT.md`, `docs/ANCAP_DOCS_REPO_BOOTSTRAP.md`, and the label/Discussions/milestone/project-board/repo-settings/update-cadence/CI/Dependabot seed docs);
 - contributor surfaces still exist (`.github/CODEOWNERS`, issue templates, PR template);
 - machine-readable bootstrap seeds under `.github/bootstrap/` still parse;
-- `.github/bootstrap/ancap-docs-ci-workflow.yml` stays byte-for-byte aligned with `.github/workflows/docs-ci.yml` so the exported workflow template cannot silently drift;
+- `.github/bootstrap/ancap-docs-ci-workflow.yml` stays structurally aligned with `.github/workflows/docs-ci.yml` so exported workflow logic cannot silently drift, while version-only GitHub Actions bumps may differ until the bootstrap template is refreshed;
 - when the checked repo is the exported docs bundle, `.github/bootstrap/ancap-docs-dependabot.yml` stays byte-for-byte aligned with the exported public `.github/dependabot.yml` so the docs-repo Dependabot seed/template cannot silently drift either;
 - relative Markdown links inside the exported repo resolve without depending on local monorepo paths.
 
@@ -65,4 +65,4 @@ If the public repo later changes workflow/job names, update this file, `.github/
 
 ## Definition of done for this prep slice
 
-This seed is doing its job when the future public docs repo has a copy-ready CI workflow, the matching exported workflow template stays available next to the machine-readable CI metadata and remains byte-for-byte aligned with the shipped workflow, the docs-repo Dependabot template stays byte-for-byte aligned with the exported public `.github/dependabot.yml`, the default status-check context is documented instead of guessed, the workflow validates the full bootstrap seed surface instead of only a partial subset, and branch protection can be applied from checked-in seed data without launch-day JSON hand editing.
+This seed is doing its job when the future public docs repo has a copy-ready CI workflow, the matching exported workflow template stays available next to the machine-readable CI metadata and remains structurally aligned with the shipped workflow even if a GitHub Actions version-only bump lands first in `.github/workflows/docs-ci.yml`, the docs-repo Dependabot template stays byte-for-byte aligned with the exported public `.github/dependabot.yml`, the default status-check context is documented instead of guessed, the workflow validates the full bootstrap seed surface instead of only a partial subset, and branch protection can be applied from checked-in seed data without launch-day JSON hand editing.

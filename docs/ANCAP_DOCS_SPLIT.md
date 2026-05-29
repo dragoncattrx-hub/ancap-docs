@@ -86,14 +86,16 @@ The script copies the approved public-safe files, exports a docs-focused root `R
 
 ## Current blocker
 
-The public GitHub org / repo creation step is still external. Current checks from this cron run show:
+GitHub org creation is still external, but the public docs repo now exists at `https://github.com/dragoncattrx-hub/ancap-docs`. Current checks from this cron run show:
 
 - `https://github.com/ANCAP` resolves to an existing unrelated GitHub user profile (`ancap`)
 - `https://github.com/ancap-network` returns GitHub 404
 - `gh api orgs/ANCAP` and `gh api orgs/ancap-network` both fail with `admin:org` scope requirement in the current auth context
-- `gh repo view dragoncattrx-hub/ancap-docs` reports the repo does not currently exist
+- `gh repo view dragoncattrx-hub/ancap-docs` now succeeds, the repo is public, and the exported bundle has been pushed as the first seed commit
+- `gh run list --repo dragoncattrx-hub/ancap-docs --limit 5` shows the exported `Docs CI` workflow already ran successfully on `main`
+- repo settings/labels/milestones and default-branch protection are now applied live; the helper can also verify that live repo state still matches the checked-in seeds via `python scripts/bootstrap_ancap_docs_repo.py --repo <owner>/ancap-docs --verify-live`
 
-So the split can be prepared in-repo now, but the actual org/repo creation still needs the right GitHub account/scope and final ownership decision.
+So the split is no longer just theoretical prep: the public docs repo is seeded and live, while org ownership and final branch-protection enforcement remain the next external/live follow-ups.
 
 ## Done definition for this prep slice
 

@@ -1,16 +1,16 @@
 # ANCAP docs repo bootstrap checklist
 
-Status: active prep for the future public `ancap-docs` repository.
+Status: active live-bootstrap follow-up for the public `ancap-docs` repository.
 
-This checklist turns the in-repo export bundle into a predictable first public repo setup once GitHub ownership/access is available.
+This checklist started as the in-repo launch plan and now also serves as the source of truth for follow-up bootstrap work on the live public repo after the first seed push.
 
 ## Goal
 
-Create the public docs repo quickly without improvising repo settings, contributor surfaces, or security/trust baseline steps.
+Create and harden the public docs repo without improvising repo settings, contributor surfaces, or security/trust baseline steps.
 
 ## Preconditions
 
-Before creating the repo, confirm:
+Before creating or re-seeding the repo, confirm:
 
 - the final owner/name decision is made (`ANCAP`, `ancap-network`, or another approved fallback);
 - the current export bundle is generated with `python scripts/export_ancap_docs.py --target <path> --clean`;
@@ -25,6 +25,15 @@ Before creating the repo, confirm:
 4. Copy the generated export bundle into a clean working directory.
 5. Commit and push the exported files as the initial public-safe docs seed.
 6. Verify that the root `README.md` is the docs-focused landing page, not the monorepo operations README.
+
+Current live status from this run:
+- `https://github.com/dragoncattrx-hub/ancap-docs` now exists as the public seed repo;
+- the exported bundle has already been pushed as the first commit on `main`;
+- the exported `Docs CI` workflow has already completed successfully on `main`;
+- repo settings / labels / milestones have already been applied from the checked-in helper + seeds;
+- branch protection is now live on `main` with required PRs, 1 approval, stale-review dismissal, CODEOWNERS review, conversation resolution, and required status check `Docs CI / docs-bundle`;
+- `scripts/bootstrap_ancap_docs_repo.py --repo <owner>/ancap-docs --verify-live` can now compare the live repo metadata + default-branch protection against the checked-in seeds without hand-checking every setting;
+- open public Dependabot PRs may bump GitHub Actions versions in `.github/workflows/docs-ci.yml` before the exported bootstrap template is refreshed, so the live guard now requires structural workflow alignment rather than byte-for-byte sameness for that pair; logic/action-identity drift is still a hard failure.
 
 ## GitHub settings baseline
 

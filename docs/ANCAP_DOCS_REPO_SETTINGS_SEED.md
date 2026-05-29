@@ -1,12 +1,12 @@
 # ANCAP docs repo settings seed
 
-Status: active prep for the future public `ancap-docs` repository.
+Status: active settings baseline for the live public `ancap-docs` repository.
 
 This seed captures the baseline repository settings that should be applied during the first public launch so the repo does not depend on ad-hoc memory or one-off clicking.
 
 ## Purpose
 
-Use this seed to configure the future public `ancap-docs` repository consistently once GitHub owner/admin access is available.
+Use this seed to configure the live public `ancap-docs` repository consistently and to keep later owner/org migration aligned with the same baseline.
 
 It complements:
 - `docs/ANCAP_DOCS_REPO_BOOTSTRAP.md` for the human checklist
@@ -47,6 +47,12 @@ Recommended apply path once the public repo exists:
 - then use `python scripts/bootstrap_ancap_docs_repo.py --repo <owner>/ancap-docs --apply` to apply the repo metadata, vulnerability alerts, labels, and milestones from the checked-in seeds;
 - after the first exported bundle push and once the real public CI context names are known, use `python scripts/bootstrap_ancap_docs_repo.py --repo <owner>/ancap-docs --apply --apply-branch-protection --status-check-context <context>` so the protection payload is generated from the same seed instead of hand-authoring JSON at launch time;
 - keep the chosen status-check context names documented here and in `.github/bootstrap/ancap-docs-repo-settings.json` if the expected CI surface changes.
+
+Current live status:
+- `dragoncattrx-hub/ancap-docs` now exists and already has the initial public-safe docs seed pushed to `main`;
+- description/homepage/merge policy/secret scanning/push protection/labels/milestones are already applied live from this seed set;
+- branch protection is now applied live on `main` with the seeded `Docs CI / docs-bundle` required-check context;
+- `python scripts/bootstrap_ancap_docs_repo.py --repo <owner>/ancap-docs --verify-live` can compare the live repo metadata and protection state against this seed after launch-time changes.
 
 ## Security / trust baseline
 

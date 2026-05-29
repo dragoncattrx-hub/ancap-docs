@@ -112,11 +112,20 @@ jobs:
               with (repo / json_path).open('r', encoding='utf-8') as handle:
                   json.load(handle)
 
+          def normalize_workflow_text(text: str) -> str:
+              return re.sub(
+                  r'(?m)^(\s*uses:\s+)([^@\s#]+)@([^\s#]+)(?:\s+#.*)?\s*$',
+                  lambda match: f"{match.group(1)}{match.group(2)}@<version>",
+                  text,
+              )
+
           workflow_path = repo / '.github/workflows/docs-ci.yml'
           workflow_template_path = repo / '.github/bootstrap/ancap-docs-ci-workflow.yml'
-          if workflow_path.read_text(encoding='utf-8') != workflow_template_path.read_text(encoding='utf-8'):
+          workflow_text = workflow_path.read_text(encoding='utf-8')
+          workflow_template_text = workflow_template_path.read_text(encoding='utf-8')
+          if normalize_workflow_text(workflow_text) != normalize_workflow_text(workflow_template_text):
               raise SystemExit(
-                  'Docs CI workflow drift detected: .github/bootstrap/ancap-docs-ci-workflow.yml must stay byte-for-byte aligned with .github/workflows/docs-ci.yml'
+                  'Docs CI workflow drift detected: .github/bootstrap/ancap-docs-ci-workflow.yml must stay structurally aligned with .github/workflows/docs-ci.yml; GitHub Actions version-only bumps may differ, but workflow logic and action identities must stay in sync'
               )
 
           dependabot_path = repo / '.github/dependabot.yml'
