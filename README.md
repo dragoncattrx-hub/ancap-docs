@@ -33,6 +33,7 @@ Core truth:
 - [Docs repo Discussions seed](docs/ANCAP_DOCS_DISCUSSIONS_SEED.md)
 - [Docs repo milestone seed](docs/ANCAP_DOCS_MILESTONE_SEED.md)
 - [Docs repo project board seed](docs/ANCAP_DOCS_PROJECT_BOARD_SEED.md)
+- [Docs repo initial issues seed](docs/ANCAP_DOCS_INITIAL_ISSUES_SEED.md)
 - [Docs repo settings seed](docs/ANCAP_DOCS_REPO_SETTINGS_SEED.md)
 - [Docs repo update cadence seed](docs/ANCAP_DOCS_UPDATE_CADENCE_SEED.md)
 - [Docs repo Dependabot seed](docs/ANCAP_DOCS_DEPENDABOT_SEED.md)

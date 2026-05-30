@@ -11,6 +11,7 @@ They exist so the first public repo setup can be scripted or batch-applied inste
 - `ancap-docs-milestones.json` — initial public milestone taxonomy
 - `ancap-docs-discussions.json` — initial Discussions categories, moderation notes, and copy-ready pinned-topic text
 - `ancap-docs-project-board.json` — initial public roadmap board fields/views/filters
+- `ancap-docs-initial-issues.json` — initial public-safe starter issue backlog mapped to labels, milestones, and suggested board fields
 - `ancap-docs-repo-settings.json` — initial repo metadata, feature toggles, branch-protection, and security baseline
 - `ancap-docs-update-cadence.json` — initial public update and release-note cadence plus copy-ready starter templates
 - `ancap-docs-ci.json` — initial Docs CI workflow metadata, expected status-check contexts, and branch-protection alignment seed
@@ -25,6 +26,7 @@ These JSON seeds should stay aligned with:
 - `docs/ANCAP_DOCS_MILESTONE_SEED.md`
 - `docs/ANCAP_DOCS_DISCUSSIONS_SEED.md`
 - `docs/ANCAP_DOCS_PROJECT_BOARD_SEED.md`
+- `docs/ANCAP_DOCS_INITIAL_ISSUES_SEED.md`
 - `docs/ANCAP_DOCS_REPO_SETTINGS_SEED.md`
 - `docs/ANCAP_DOCS_UPDATE_CADENCE_SEED.md`
 - `docs/ANCAP_DOCS_CI_SEED.md`

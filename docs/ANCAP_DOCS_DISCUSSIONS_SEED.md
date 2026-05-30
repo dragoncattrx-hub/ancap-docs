@@ -122,6 +122,21 @@ During the first `ancap-docs` repo setup:
 4. Copy or adapt the starter text from this file or `.github/bootstrap/ancap-docs-discussions.json` instead of drafting those pinned posts from scratch during launch.
 5. Link the Discussions surface from the root `README.md` or repo sidebar when the public repo exists.
 
+## Current live follow-up state
+
+The public repo now already has the three seeded bootstrap topics live at:
+- `https://github.com/dragoncattrx-hub/ancap-docs/discussions/2` — `Welcome / how to use this repo`
+- `https://github.com/dragoncattrx-hub/ancap-docs/discussions/3` — `Where to ask what`
+- `https://github.com/dragoncattrx-hub/ancap-docs/discussions/4` — `Public scope boundaries`
+
+Current honest drift against this seed:
+- those three topics are still unpinned;
+- live Discussions still carry extra default categories `General` and `Polls`;
+- the seeded categories still use GitHub's stock live descriptions instead of the ANCAP-specific descriptions above;
+- live project-board verification is still blocked under the current token because it lacks `read:project`.
+
+Use `python scripts/bootstrap_ancap_docs_repo.py --repo <owner>/ancap-docs --verify-live --verify-live-community` to get an explicit operator action list for those remaining Discussions/project-board cleanup steps instead of re-deriving them manually. Current helper truth: GitHub's public GraphQL surface does expose `createDiscussion` / `updateDiscussion` for future missing-topic, topic-body, or category-reassignment automation, but the helper does not apply those mutations today, and the remaining category-description/pinning cleanup still needs GitHub UI or a future owner-capable automation path.
+
 ## Definition of done for this prep slice
 
 This seed is doing its job when the future docs repo can open Discussions with clear public-safe defaults, minimal moderator ambiguity, and copy-ready pinned-topic text instead of needing to invent launch copy from scratch.
