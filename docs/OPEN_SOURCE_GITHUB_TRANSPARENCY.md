@@ -120,6 +120,7 @@ People should be able to inspect:
 ## Current publishable surfaces already in repo
 
 Examples:
+- `docs/PUBLIC_INTEGRATION_EXAMPLES.md`
 - `examples/payment-integration/python_credit_topup.py`
 - `examples/wallet-connection/python_wallet_login.py`
 

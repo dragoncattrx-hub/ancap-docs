@@ -4,11 +4,13 @@ Curated public-facing changelog for major ANCAP repository milestones.
 
 For exhaustive implementation detail, see [LOG.md](https://github.com/dragoncattrx-hub/ancap/blob/master/LOG.md).
 
-## 2026-05-30 — official contract-address trust index
+## 2026-05-30 — contract trust index + public examples index
 
 - added `docs/OFFICIAL_CONTRACT_ADDRESSES.md` as the public-safe canonical index for ACP / `wACP` / `BridgeGateway` identities
 - linked the official address index from trust, verification, pilot, deployment, and contract-doc surfaces so reviewers have one canonical public lookup path
 - kept fake-contract / scam-warning guidance next to the official address list for the future `ancap-docs` trust surface
+- added `docs/PUBLIC_INTEGRATION_EXAMPLES.md` as a contributor-friendly index for publishable payment, wallet, and bridge-facing example surfaces
+- linked that new examples index from repo/docs landing surfaces so the seeded public integration backlog no longer depends on browsing the monorepo tree manually
 
 ## 2026-05-27 — release + transparency + deployment-story cleanup
 

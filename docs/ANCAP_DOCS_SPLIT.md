@@ -66,6 +66,7 @@ The initial export should include:
   - `docs/TESTNET_DEPLOYMENT_GUIDE.md`
   - `docs/AUDIT_CHECKLIST.md`
   - `docs/CHANGELOG_PUBLIC.md`
+  - `docs/PUBLIC_INTEGRATION_EXAMPLES.md`
 
 ## Explicitly excluded
 

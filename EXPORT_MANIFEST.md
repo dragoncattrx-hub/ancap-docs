@@ -59,6 +59,7 @@ Relative links to files outside this bundle are rewritten to the source monorepo
 - `docs/TESTNET_DEPLOYMENT_GUIDE.md`
 - `docs/AUDIT_CHECKLIST.md`
 - `docs/CHANGELOG_PUBLIC.md`
+- `docs/PUBLIC_INTEGRATION_EXAMPLES.md`
 - `.github/dependabot.yml`
 
 ## Excluded by design

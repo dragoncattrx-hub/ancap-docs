@@ -60,6 +60,7 @@ Public trust docs:
 ## Public code and example surfaces
 
 Those code surfaces currently live in the source monorepo and are linked directly from this docs bundle:
+- [Public integration examples index](docs/PUBLIC_INTEGRATION_EXAMPLES.md)
 - [Examples index](https://github.com/dragoncattrx-hub/ancap/blob/master/examples/README.md)
 - [Stripe credit top-up example](https://github.com/dragoncattrx-hub/ancap/blob/master/examples/payment-integration/python_credit_topup.py)
 - [Wallet connection example](https://github.com/dragoncattrx-hub/ancap/blob/master/examples/wallet-connection/python_wallet_login.py)
