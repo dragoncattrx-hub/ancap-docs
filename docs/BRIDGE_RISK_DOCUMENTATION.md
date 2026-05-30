@@ -7,6 +7,7 @@ This document is intentionally transparent about system risk without exposing pr
 Related documents:
 - [Bridge spec v1](https://github.com/dragoncattrx-hub/ancap/blob/master/docs/bridge-spec-v1.md)
 - [Bridge pilot mainnet status](https://github.com/dragoncattrx-hub/ancap/blob/master/docs/bridge-pilot-mainnet.md)
+- [Official contract-address index](OFFICIAL_CONTRACT_ADDRESSES.md)
 - [Bridge launch checklist](https://github.com/dragoncattrx-hub/ancap/blob/master/docs/bridge-launch-checklist.md)
 - [contracts/bridge-bsc/README.md](https://github.com/dragoncattrx-hub/ancap/blob/master/contracts/bridge-bsc/README.md)
 

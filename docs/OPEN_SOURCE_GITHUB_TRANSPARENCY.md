@@ -132,6 +132,7 @@ Supporting contract docs:
 - `docs/bridge-spec-v1.md`
 - `docs/bridge-pilot-mainnet.md`
 - `docs/BRIDGE_RISK_DOCUMENTATION.md`
+- `docs/OFFICIAL_CONTRACT_ADDRESSES.md`
 - `docs/CONTRACT_VERIFICATION_GUIDE.md`
 - `docs/TESTNET_DEPLOYMENT_GUIDE.md`
 - `docs/AUDIT_CHECKLIST.md`

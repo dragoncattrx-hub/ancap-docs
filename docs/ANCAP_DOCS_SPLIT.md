@@ -61,6 +61,7 @@ The initial export should include:
   - `docs/WHITEPAPER_ACP.md`
   - `docs/LEGAL_TERMS_TEMPLATE.md`
   - `docs/BRIDGE_RISK_DOCUMENTATION.md`
+  - `docs/OFFICIAL_CONTRACT_ADDRESSES.md`
   - `docs/CONTRACT_VERIFICATION_GUIDE.md`
   - `docs/TESTNET_DEPLOYMENT_GUIDE.md`
   - `docs/AUDIT_CHECKLIST.md`

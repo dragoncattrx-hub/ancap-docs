@@ -51,6 +51,7 @@ Project/context docs:
 
 Public trust docs:
 - [Bridge risk documentation](docs/BRIDGE_RISK_DOCUMENTATION.md)
+- [Official contract-address index](docs/OFFICIAL_CONTRACT_ADDRESSES.md)
 - [Contract verification guide](docs/CONTRACT_VERIFICATION_GUIDE.md)
 - [Testnet deployment guide](docs/TESTNET_DEPLOYMENT_GUIDE.md)
 - [Audit checklist](docs/AUDIT_CHECKLIST.md)
