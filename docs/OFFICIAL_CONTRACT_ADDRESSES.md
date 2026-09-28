@@ -3,9 +3,9 @@
 Status: public-safe reference for the currently documented ACP / wACP / bridge identities.
 
 Use this page as the fast index for the official public contract surfaces, explorer links, and verification pointers.
-For deployment-story context, see [bridge-pilot-mainnet.md](./bridge-pilot-mainnet.md).
-For source/build verification, see [CONTRACT_VERIFICATION_GUIDE.md](./CONTRACT_VERIFICATION_GUIDE.md).
-For operational trust boundaries and bridge risk posture, see [BRIDGE_RISK_DOCUMENTATION.md](./BRIDGE_RISK_DOCUMENTATION.md).
+For deployment-story context, see [bridge-pilot-mainnet.md](https://github.com/dragoncattrx-hub/ancap/blob/master/docs/bridge-pilot-mainnet.md).
+For source/build verification, see [CONTRACT_VERIFICATION_GUIDE.md](CONTRACT_VERIFICATION_GUIDE.md).
+For operational trust boundaries and bridge risk posture, see [BRIDGE_RISK_DOCUMENTATION.md](BRIDGE_RISK_DOCUMENTATION.md).
 
 ## Critical warning
 
@@ -33,8 +33,8 @@ Current public identity surfaces:
 - ACP transaction-view pattern used by the bridge docs/UI: `https://ancap.cloud/acp/tx/<txid>`
 
 Reference docs:
-- [ACP crypto-asset whitepaper](./WHITEPAPER_ACP.md)
-- [ACP crypto README](../ACP-crypto/README.md)
+- [ACP crypto-asset whitepaper](WHITEPAPER_ACP.md)
+- [ACP crypto README](https://github.com/dragoncattrx-hub/ancap/blob/master/ACP-crypto/README.md)
 
 ### BSC mainnet — wrapped ACP contract
 
@@ -43,7 +43,7 @@ Official wrapped token:
 - network: `BSC mainnet`
 - address: `0x349797E2f1A4FD722Af2dB181ab1C4ED7606F402`
 - explorer: <https://bscscan.com/address/0x349797E2f1A4FD722Af2dB181ab1C4ED7606F402>
-- source: [contracts/bridge-bsc/src/WACP.sol](../contracts/bridge-bsc/src/WACP.sol)
+- source: [contracts/bridge-bsc/src/WACP.sol](https://github.com/dragoncattrx-hub/ancap/blob/master/contracts/bridge-bsc/src/WACP.sol)
 
 ### BSC mainnet — bridge gateway contract
 
@@ -52,15 +52,15 @@ Official bridge gateway:
 - network: `BSC mainnet`
 - address: `0x57c24FF77B23a82328cb88914D4FD4EEBd93321b`
 - explorer: <https://bscscan.com/address/0x57c24FF77B23a82328cb88914D4FD4EEBd93321b>
-- source: [contracts/bridge-bsc/src/BridgeGateway.sol](../contracts/bridge-bsc/src/BridgeGateway.sol)
+- source: [contracts/bridge-bsc/src/BridgeGateway.sol](https://github.com/dragoncattrx-hub/ancap/blob/master/contracts/bridge-bsc/src/BridgeGateway.sol)
 
 ## Related public trust surfaces
 
 Use these together with the addresses above:
-- bridge pilot deployment story: [bridge-pilot-mainnet.md](./bridge-pilot-mainnet.md)
-- build/source verification process: [CONTRACT_VERIFICATION_GUIDE.md](./CONTRACT_VERIFICATION_GUIDE.md)
-- bridge risk/trust model: [BRIDGE_RISK_DOCUMENTATION.md](./BRIDGE_RISK_DOCUMENTATION.md)
-- testnet validation path: [TESTNET_DEPLOYMENT_GUIDE.md](./TESTNET_DEPLOYMENT_GUIDE.md)
+- bridge pilot deployment story: [bridge-pilot-mainnet.md](https://github.com/dragoncattrx-hub/ancap/blob/master/docs/bridge-pilot-mainnet.md)
+- build/source verification process: [CONTRACT_VERIFICATION_GUIDE.md](CONTRACT_VERIFICATION_GUIDE.md)
+- bridge risk/trust model: [BRIDGE_RISK_DOCUMENTATION.md](BRIDGE_RISK_DOCUMENTATION.md)
+- testnet validation path: [TESTNET_DEPLOYMENT_GUIDE.md](TESTNET_DEPLOYMENT_GUIDE.md)
 - bridge UI/status surface: <https://ancap.cloud/bridge/acp-bsc>
 - bridge status API: <https://ancap.cloud/api/v1/bridge/status>
 - reserve summary API: <https://ancap.cloud/api/v1/bridge/reserve-summary>
@@ -69,9 +69,9 @@ Use these together with the addresses above:
 ## Fast verification flow
 
 1. Confirm the address matches this page exactly.
-2. Confirm the same address appears in [bridge-pilot-mainnet.md](./bridge-pilot-mainnet.md).
+2. Confirm the same address appears in [bridge-pilot-mainnet.md](https://github.com/dragoncattrx-hub/ancap/blob/master/docs/bridge-pilot-mainnet.md).
 3. Open the explorer link and compare the verified source/interface with the repo source.
-4. Follow [CONTRACT_VERIFICATION_GUIDE.md](./CONTRACT_VERIFICATION_GUIDE.md) to rebuild/test from source.
+4. Follow [CONTRACT_VERIFICATION_GUIDE.md](CONTRACT_VERIFICATION_GUIDE.md) to rebuild/test from source.
 5. Check runtime truth via bridge status and reserve surfaces.
 6. If anything disagrees, treat the surface as suspect until the public docs are reconciled.
 
@@ -88,6 +88,6 @@ Red flags:
 
 If the official public contract surfaces change, update all of the following together:
 - this page;
-- [bridge-pilot-mainnet.md](./bridge-pilot-mainnet.md);
-- [CONTRACT_VERIFICATION_GUIDE.md](./CONTRACT_VERIFICATION_GUIDE.md);
-- [CHANGELOG_PUBLIC.md](./CHANGELOG_PUBLIC.md) when the change is externally meaningful.
+- [bridge-pilot-mainnet.md](https://github.com/dragoncattrx-hub/ancap/blob/master/docs/bridge-pilot-mainnet.md);
+- [CONTRACT_VERIFICATION_GUIDE.md](CONTRACT_VERIFICATION_GUIDE.md);
+- [CHANGELOG_PUBLIC.md](CHANGELOG_PUBLIC.md) when the change is externally meaningful.
